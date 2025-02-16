@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Adicionado o link para Bootstrap Icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-danger">
+    <!-- Navbar fixa -->
+    <header class="bg-dark py-3 fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-danger d-flex align-items-center">
+                Hello, World! <img src="imagens/Red-Lightsaber-Transparent-PNG.png" width="400" height="70" alt="Sabre de Luz Vermelho" class="sabre-luz">
+            </h1>            
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-danger" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#courses">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#contact">Contato</a></li>
+                    <!-- Ícone de Play -->
+                    <li class="nav-item">
+                        <button id="playButton" class="btn btn-danger" style="border: none; background: transparent;">
+                            <i class="bi bi-play-circle" style="font-size: 1.5rem;"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div style="height: 80px;"></div>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">Sobre Mim</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagens/foto-perfil2.png" width="200" height="200" alt="Foto de Perfil" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <p></p>
+                <p>Sou um desenvolvedor apaixonado pelo lado negro da força, com experiência em diversas tecnologias, como C, Java, Python, HTML, CSS, SQL e JavaScript.</p>
+                <p>Ao longo da minha trajetória, acumulei uma sólida experiência como planejador nas áreas de engenharia e gestão de projetos. No entanto, desde a faculdade, fui atraído pelo lado obscuro da força, o que me levou a uma transição definitiva para o universo da programação.</p>
+                <p>A programação não é apenas minha profissão, mas também uma paixão que me impulsiona a buscar constantemente novas soluções e desafios. Acredito que a combinação de minha experiência em gestão de projetos e minha dedicação à tecnologia me permite criar soluções inovadoras e eficientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cursos -->
+    <section id="courses" class="container py-4">
+        <h2 class="text-center">Cursos Concluídos</h2>
+        <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/language-c.jpg" width="350" height="183" class="carousel-img" alt="Curso Linguagem C">
+                    <img src="imagens/java.jpg" width="350" height="183" class="carousel-img" alt="Curso de Java">
+                    <img src="imagens/python2.jpg" width="350" height="183" class="carousel-img" alt="Curso de Python">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/sql.jpg" width="350" height="183" class="carousel-img" alt="Curso de SQL">
+                    <img src="imagens/html-css3.jpg" width="350" height="183" class="carousel-img" alt="Curso de HTML e CSS">
+                    <img src="imagens/js.jpg" width="350" height="183" class="carousel-img" alt="Curso de JavaScript">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>               
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="container py-5 text-center">
+        <h2>Meus Projetos</h2>
+        <a href="https://github.com/CastorGleydson" class="btn btn-danger btn-lg m-2" target="_blank">Meu GitHub</a>
+        <a href="https://www.linkedin.com/in/gleydson-castor-2453b419a/" class="btn btn-danger btn-lg m-2" target="_blank">Meu LinkedIn</a>
+    </section>
+    
+    <!-- Seção Contato -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-danger py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Portfólio Sith | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Música -->
+    <section id="music" class="container py-5 text-center">
+        <audio id="audioPlayer">
+            <source src="Music/The New Order - Aaron Kenny.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
