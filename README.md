@@ -1,5 +1,5 @@
 # portifolio_sith_com_js
-Nesta atualização do meu portfólio, além da estrutura básica com HTML, CSS e Bootstrap, incluí JavaScript para interatividade e uma música de fundo. A ideia foi trazer mais dinamismo com um carrossel de cursos, formulário de contato e elementos que tornam o portfólio mais interessante e funcional para iniciantes.
+Nesta atualização do portfólio, além da estrutura básica com HTML, CSS e Bootstrap, incluí JavaScript para interatividade e uma música de fundo. A ideia foi trazer mais dinamismo com um carrossel de cursos, formulário de contato e elementos que tornam o portfólio mais interessante e funcional para iniciantes.
 
 💻 Portfólio Sith
 
@@ -20,15 +20,9 @@ Se quiser testar ou modificar o código, siga esses passos:
 
 Baixe o projeto
 
-bash
-Copiar
-Editar
 git clone https://github.com/CastorGleydson/portifolio_sith_com_js.git
 Acesse a pasta do projeto
 
-bash
-Copiar
-Editar
 cd nome-do-repositorio
 Abra o arquivo index.html no seu navegador para visualizar o portfólio.
 
